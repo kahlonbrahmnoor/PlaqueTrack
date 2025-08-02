@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PlaqueTrack+</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Welcome to PlaqueTrack+</h1>
+    <p>Your smart dental app is coming soon!</p>
+    
+    <h2>Plaque Risk Calculator</h2>
+
+<form id="food-form">
+  <label for="food-select">Select a food or drink:</label>
+  <select id="food-select" required>
+    <option value="">--Choose an item--</option>
+    <option value="25">Soda</option>
+    <option value="15">Candy</option>
+    <option value="10">Chips</option>
+    <option value="5">Fruit Juice</option>
+    <option value="-5">Cheese</option>
+    <option value="0">Water</option>
+  </select>
+  <button type="submit">Add</button>
+</form>
+
+<h3>Your Plaque Risk Score: <span id="score">0</span></h3>
+
+<ul id="food-list"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
